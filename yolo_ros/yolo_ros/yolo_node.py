@@ -10,7 +10,7 @@ class YoloDetectorNode(Node):
     def __init__(self):
         super().__init__('yolo_detector_node')
 
-        self.model = YOLO('yolov8n.pt')  # 또는 'custom.pt'
+        self.model = YOLO('best.pt')  # 또는 'custom.pt'
         self.bridge = CvBridge()
 
         # 이미지 구독
